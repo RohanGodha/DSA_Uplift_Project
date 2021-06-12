@@ -1,31 +1,37 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main() 
+int main()
 {
-for(int i=1;i<=3;i++)
-{
-	for(int j=3-i;j>0;j--)
-	{
-		cout<<" ";
-	}
-	for(int k=i;k>0;k--)
-	{
-		cout<<"* ";
-	}
-	cout<<endl;
-}
-
-for(int i=2;i>0;i--)
-{
-	    for(int j=0;j<3-i;j++)
-	{
-		cout<<" ";
-	}
-	for(int k=0;k<i;k++)
-	{
-		cout<<"* ";
-	}
-	cout<<endl;
-}
+    int n;
+    cin>>n;
+     for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<j<<" ";
+        }
+        for(int k=1;k<=n-i;k++)
+        {
+            cout<<"  ";
+        }
+        for(int k=2;k<=n-i;k++)
+        {
+            cout<<"  ";
+        }
+        if(i==n)
+        {
+            for(int j=i-1;j>=1;j--)
+            {
+                cout<<j<<" ";
+            }
+        }
+        else{
+            for(int j=i;j>=1;j--)
+            {
+                cout<<j<<" ";
+            }
+        }
+        cout<<endl;
+    }
     return 0;
 }
